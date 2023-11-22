@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Formulario HTML</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+            margin: auto;
+        }
+
+        label {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Formulario de Contacto</h1>
+
+    <form action="https://www.utpl.edu.ec/" method="GET">
+        <label for="titulo">Título:
+            <select id="titulo" name="titulo">
+                <option value="Sr.">Sr.</option>
+                <option value="Sra.">Sra.</option>
+                <option value="Dr.">Dr.</option>
+                <option value="Dra.">Dra.</option>
+            </select>
+        </label>
+
+        <label for="nombres">Nombres:
+            <input type="text" id="nombres" name="nombres" required autofocus>
+        </label>
+
+        <label for="email">Email:
+            <input type="email" id="email" name="email" required>
+        </label>
+
+        <label for="web">Web:
+            <input type="url" id="web" name="web" placeholder="URL de tu página web personal">
+        </label>
+
+        <label for="fechaRegistro">Fecha de Registro:
+            <input type="date" id="fechaRegistro" name="fechaRegistro">
+        </label>
+
+        <label for="hora">Hora:
+            <input type="time" id="hora" name="hora">
+        </label>
+
+        <label for="edad">Edad:
+            <input type="number" id="edad" name="edad" min="18" max="65">
+        </label>
+
+        <label for="contacto">Contacto:
+            <input type="tel" id="contacto" name="contacto">
+        </label>
+
+        <label for="colorFavorito">Color Favorito:
+            <input type="color" id="colorFavorito" name="colorFavorito">
+        </label>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>
+7
